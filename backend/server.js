@@ -19,7 +19,7 @@ app.get("/",(req,res)=>{
 }); 
 
 app.get("/api/products",(req,res)=>{
-    const sql="SELECT * FROM products";
+    const sql="SELECT * FROM products ";
     db.query(sql,(err,result)=>{
         if(err){
             return res.json(err);
